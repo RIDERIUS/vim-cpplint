@@ -20,8 +20,13 @@ It shows the errors inside a quickfix window, which will allow your to quickly
 jump to the error locations by simply pressing [Enter].
 
 
+Attention
+---------
 If Error "FIle xxxx not found. please install it first", please reconfigure 
-g:cpplint_cmd
+g:cpplint_cmd.
+
+Or if you want to use another lint-like program, you also can change g:cpplint_cmd
+to get it.
 
     let g:cpplint_cmd="[your_path]/cpplint.py"
 
