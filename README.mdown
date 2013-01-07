@@ -20,6 +20,11 @@ It shows the errors inside a quickfix window, which will allow your to quickly
 jump to the error locations by simply pressing [Enter].
 
 
+If Error "FIle xxxx not found. please install it first", please reconfigure 
+g:cpplint_cmd
+
+    let g:cpplint_cmd="[your_path]/cpplint.py"
+
 Customization
 -------------
 If you don't want to use the `<F7>` key for cpplint-checking, simply remap it
