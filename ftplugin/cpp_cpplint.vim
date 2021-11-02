@@ -13,7 +13,7 @@ if exists("b:loaded_cpplint_ftplugin")
 endif
 let b:loaded_cpplint_ftplugin=1
 
-let s:cpplint_cmd="cpplint.py"
+let s:cpplint_cmd="cpplint"
 
 if !exists("*Cpplint()")
     function Cpplint()
@@ -59,7 +59,7 @@ if !exists("*Cpplint()")
             " Show OK status
             hi Green ctermfg=green
             echohl Green
-            echon "cpplint.py check OK"
+            echon "cpplint check OK"
             echohl
         endif
     endfunction
