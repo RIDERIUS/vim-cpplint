@@ -36,7 +36,11 @@ if !exists("*Cpplint()")
 
         " perform the grep itself
         let &grepformat="%f:%l: %m"
-        let &grepprg=s:cpplint_cmd
+        if exists("g:cpplint_cmd_options")
+            let &grepprg=s:cpplint_cmd." ".g:cpplint_cmd_options
+        else
+            let &grepprg=s:cpplint_cmd
+        endif
         silent! grep! %
 
         " restore grep settings
